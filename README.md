@@ -15,3 +15,14 @@ chmod a+x start.sh
 ```
 ./start.sh
 ```
+
+设置壁纸：
+```
+./lybing.sh
+```
+若是要在开机完成下载并自动设置壁纸，可在开机自启文件内添加自启lybing.sh脚本
+
+这里使用xinit自启，则在~/.xinitrc文件内添加
+```
+screen -dm bash -c ~/.lybing/lybing.sh
+```
